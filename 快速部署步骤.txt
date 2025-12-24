@@ -1,0 +1,45 @@
+✅ 第一步已完成：Git 仓库已初始化并提交代码
+
+📝 接下来请按照以下步骤操作：
+
+【第二步：在 GitHub 创建仓库】
+
+1. 打开浏览器，访问：https://github.com
+2. 登录你的 GitHub 账号（如果没有，先注册）
+3. 点击右上角的 "+" 按钮
+4. 选择 "New repository"
+5. 填写：
+   - Repository name: philosopher-chat
+   - 选择 Public（公开）
+   - 不要勾选任何选项（README、.gitignore 等）
+6. 点击 "Create repository"
+
+【第三步：推送代码到 GitHub】
+
+在 PowerShell 中运行以下命令（把 YOUR_USERNAME 替换成你的 GitHub 用户名）：
+
+git remote add origin https://github.com/YOUR_USERNAME/philosopher-chat.git
+git branch -M main
+git push -u origin main
+
+如果提示输入用户名和密码：
+- 用户名：你的 GitHub 用户名
+- 密码：需要使用 Personal Access Token（见下方说明）
+
+【如果需要 Personal Access Token】
+
+1. 访问：https://github.com/settings/tokens
+2. 点击 "Generate new token" → "Generate new token (classic)"
+3. 填写：
+   - Note: 部署用token
+   - 勾选 repo 权限
+4. 点击 "Generate token"
+5. 复制生成的 token（只显示一次！）
+6. 推送时，密码处粘贴这个 token
+
+【完成后】
+
+继续按照 "手把手部署教程.md" 的第二步和第三步操作：
+- 第二步：部署后端到 Railway
+- 第三步：部署前端到 Vercel
+
